@@ -5,6 +5,7 @@
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
+    "build:prod": "ng build --prod",
     "test": "ng test",
     "test:nw": "ng test --no-watch",
     "test:cov": "ng test --no-watch --code-coverage --no-progress",
