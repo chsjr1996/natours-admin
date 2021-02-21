@@ -1,27 +1,79 @@
-# NatoursAdmin
+[![Build Status](https://travis-ci.com/chsjr1996/natours-admin.svg?branch=main)](https://travis-ci.com/chsjr1996/natours-admin) [![Coveralls github branch](https://img.shields.io/coveralls/github/chsjr1996/natours-admin/main)](https://coveralls.io/github/chsjr1996/natours-admin) [![License MIT](https://img.shields.io/github/license/chsjr1996/natours-admin)](https://github.com/chsjr1996/natours-admin/blob/main/LICENSE)
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.2.1.
+---
 
-## Development server
+![Natours Logo](./natours-logo.png)
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+<p align="center">Logo by <a href="https://github.com/jonasschmedtmann">Jonas Schmedtmann</a>.</p>
 
-## Code scaffolding
+<br>
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+# Natours Admin
 
-## Build
+![Repository Banner](./repo-banner.png)
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+A Tour Manage System built with Angular and using some good development practices like: automated tests with coverage follow up and CI tool, docker automated builds.
 
-## Running unit tests
+More is coming...
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+> Note: This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.2.1.
 
-## Running end-to-end tests
+---
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+## Topics
 
-## Further help
+- [Features / ToDo](#features--todo)
+- [Requirements](#requirements)
+- [Installation (development)](#installation-development)
+- [Deploy (production)](#deploy-production)
+- [References](#references)
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+---
+
+## Features / ToDo
+
+- [ ] Docker environments (production and development)
+- [x] Write tests and use some CI tool
+- [ ] Manage users, tours, reviews and bookings
+- [ ] GraphQL
+
+...
+
+---
+
+## Requirements
+
+- NodeJS
+- npm
+
+**And running [Natours Nest API](https://github.com/chsjr1996/natours-nest-api).**
+
+---
+
+## Installation (development)
+
+- `git clone https://github.com/chsjr1996/natours-admin.git`
+- `npm install`
+- `npm start` - **_run and watch modifications_**
+
+---
+
+## Deploy (production)
+
+Run `npm run build:prod` to build the project. The build artifacts will be stored in the `dist/` directory.
+
+---
+
+## References
+
+This repository is based on some articles and videos. I used them as study object, then here has some differences because I merged several concepts and did some adjusts.
+
+- [Angular Docs](https://angular.io/docs)
+- [Configuring Travis CI for Angular application](https://medium.com/faun/configuring-travis-ci-for-angular-application-34afee1715f)
+- [The Angular DevOps Series: CT/CI with Travis CI and GitHub Pages](https://medium.com/angular-in-depth/the-angular-devops-series-ct-ci-with-travis-ci-and-github-pages-3c02664f078)
+
+---
+
+## Under development
+
+If you see any error or want a new feature, please open a issue!
