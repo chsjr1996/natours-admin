@@ -45,6 +45,11 @@ body {
   font-family: Roboto, "Helvetica Neue", sans-serif;
 }
 
-.d-flex {
-  display: flex;
+// User interaction
+.dis-select {
+  user-select: none;
+}
+
+.cur-pointer {
+  cursor: pointer;
 }
