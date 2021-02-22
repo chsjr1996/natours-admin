@@ -9,6 +9,7 @@
     "test": "ng test",
     "test:nw": "ng test --no-watch",
     "test:cov": "ng test --no-watch --code-coverage --no-progress",
+    "test:cov:hd": "npm run test:cov -- --browsers=ChromeHeadless",
     "test:coveralls": "coveralls < coverage/natours-admin/lcov.info",
     "test:ci": "npm run test:cov -- --browsers=ChromeHeadlessNoSandbox  && npm run test:coveralls",
     "lint": "ng lint",
