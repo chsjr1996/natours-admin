@@ -1,0 +1,15 @@
+<mat-list>
+  <mat-list-item
+    class="cur-pointer dis-select"
+    matRipple
+    *ngFor="let menuItem of menuItems"
+  >
+    <a
+      class="d-flex w-100 align-items-center text-dark text-decoration-none"
+      routerLink="{{ menuItem.url }}"
+    >
+      <mat-icon class="me-2" matListIcon>{{ menuItem.icon }}</mat-icon>
+      <p class="m-0" matLine>{{ menuItem.text }}</p>
+    </a>
+  </mat-list-item>
+</mat-list>
