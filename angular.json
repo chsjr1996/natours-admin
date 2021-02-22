@@ -6,7 +6,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "natours-admin": {
+    "tours-admin": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -23,19 +23,14 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/natours-admin",
+            "outputPath": "dist/tours-admin",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
             "tsConfig": "tsconfig.app.json",
             "aot": true,
-            "assets": [
-              "src/favicon.ico",
-              "src/assets"
-            ],
-            "styles": [
-              "src/styles.scss"
-            ],
+            "assets": ["src/favicon.ico", "src/assets"],
+            "styles": ["src/styles.scss"],
             "scripts": []
           },
           "configurations": {
@@ -71,18 +66,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "natours-admin:build"
+            "browserTarget": "tours-admin:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "natours-admin:build:production"
+              "browserTarget": "tours-admin:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "natours-admin:build"
+            "browserTarget": "tours-admin:build"
           }
         },
         "test": {
@@ -92,13 +87,8 @@
             "polyfills": "src/polyfills.ts",
             "tsConfig": "tsconfig.spec.json",
             "karmaConfig": "karma.conf.js",
-            "assets": [
-              "src/favicon.ico",
-              "src/assets"
-            ],
-            "styles": [
-              "src/styles.scss"
-            ],
+            "assets": ["src/favicon.ico", "src/assets"],
+            "styles": ["src/styles.scss"],
             "scripts": []
           }
         },
@@ -110,25 +100,23 @@
               "tsconfig.spec.json",
               "e2e/tsconfig.json"
             ],
-            "exclude": [
-              "**/node_modules/**"
-            ]
+            "exclude": ["**/node_modules/**"]
           }
         },
         "e2e": {
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "natours-admin:serve"
+            "devServerTarget": "tours-admin:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "natours-admin:serve:production"
+              "devServerTarget": "tours-admin:serve:production"
             }
           }
         }
       }
     }
   },
-  "defaultProject": "natours-admin"
+  "defaultProject": "tours-admin"
 }

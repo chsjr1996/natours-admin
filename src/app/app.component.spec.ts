@@ -38,10 +38,10 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have as title 'natours-admin'`, () => {
+  it(`should have as title 'tours-admin'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('natours-admin');
+    expect(app.title).toEqual('tours-admin');
   });
 
   it('should render toolbar title', () => {
@@ -49,7 +49,7 @@ describe('AppComponent', () => {
     fixture.detectChanges();
     const compiled = fixture.nativeElement;
     expect(compiled.querySelector('span.app-title').textContent).toContain(
-      'Natours Admin'
+      'Tours Admin'
     );
   });
 });

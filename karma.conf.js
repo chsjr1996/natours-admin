@@ -25,7 +25,7 @@ module.exports = function (config) {
       suppressAll: true, // removes the duplicated traces
     },
     coverageReporter: {
-      dir: require("path").join(__dirname, "./coverage/natours-admin"),
+      dir: require("path").join(__dirname, "./coverage/tours-admin"),
       subdir: ".",
       reporters: [{ type: "lcov" }, { type: "text-summary" }],
     },

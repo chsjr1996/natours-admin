@@ -1,5 +1,5 @@
 {
-  "name": "natours-admin",
+  "name": "tours-admin",
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
@@ -10,7 +10,7 @@
     "test:nw": "ng test --no-watch",
     "test:cov": "ng test --no-watch --code-coverage --no-progress",
     "test:cov:hd": "npm run test:cov -- --browsers=ChromeHeadless",
-    "test:coveralls": "coveralls < coverage/natours-admin/lcov.info",
+    "test:coveralls": "coveralls < coverage/tours-admin/lcov.info",
     "test:ci": "npm run test:cov -- --browsers=ChromeHeadlessNoSandbox  && npm run test:coveralls",
     "lint": "ng lint",
     "e2e": "ng e2e"

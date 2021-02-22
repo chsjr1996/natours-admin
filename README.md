@@ -1,14 +1,14 @@
-[![Build Status](https://travis-ci.com/chsjr1996/natours-admin.svg?branch=main)](https://travis-ci.com/chsjr1996/natours-admin) [![Coveralls github branch](https://img.shields.io/coveralls/github/chsjr1996/natours-admin/main)](https://coveralls.io/github/chsjr1996/natours-admin) [![License MIT](https://img.shields.io/github/license/chsjr1996/natours-admin)](https://github.com/chsjr1996/natours-admin/blob/main/LICENSE)
+[![Build Status](https://travis-ci.com/chsjr1996/tours-admin.svg?branch=main)](https://travis-ci.com/chsjr1996/tours-admin) [![Coveralls github branch](https://img.shields.io/coveralls/github/chsjr1996/tours-admin/main)](https://coveralls.io/github/chsjr1996/tours-admin) [![License MIT](https://img.shields.io/github/license/chsjr1996/tours-admin)](https://github.com/chsjr1996/tours-admin/blob/main/LICENSE)
 
 ---
 
-![Natours Logo](./natours-logo.png)
-
-<p align="center">Logo by <a href="https://github.com/jonasschmedtmann">Jonas Schmedtmann</a>.</p>
+<p align="center">
+  <img src="logo.png" alt="Logo"/>
+</p>
 
 <br>
 
-# Natours Admin
+# Tours Admin
 
 ![Repository Banner](./repo-banner.png)
 
@@ -46,13 +46,13 @@ More is coming...
 - NodeJS
 - npm
 
-**And running [Natours Nest API](https://github.com/chsjr1996/natours-nest-api).**
+**And running [Tours Nest API](https://github.com/chsjr1996/tours-nest-api).**
 
 ---
 
 ## Installation (development)
 
-- `git clone https://github.com/chsjr1996/natours-admin.git`
+- `git clone https://github.com/chsjr1996/tours-admin.git`
 - `npm install`
 - `npm start` - **_run and watch modifications_**
 
