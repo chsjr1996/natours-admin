@@ -69,6 +69,9 @@ Run `npm run build:prod` to build the project. The build artifacts will be store
 This repository is based on some articles and videos. I used them as study object, then here has some differences because I merged several concepts and did some adjusts.
 
 - [Angular Docs](https://angular.io/docs)
+- [Material Angular Components](https://material.angular.io/components)
+- [Overall structural guidelines](https://angular.io/guide/styleguide#file-tree)
+- [Stop Using Shared Material Module](https://indepth.dev/posts/1191/stop-using-shared-material-module)
 - [Configuring Travis CI for Angular application](https://medium.com/faun/configuring-travis-ci-for-angular-application-34afee1715f)
 - [The Angular DevOps Series: CT/CI with Travis CI and GitHub Pages](https://medium.com/angular-in-depth/the-angular-devops-series-ct-ci-with-travis-ci-and-github-pages-3c02664f078)
 
