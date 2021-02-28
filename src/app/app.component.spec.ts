@@ -48,7 +48,7 @@ describe('AppComponent', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement;
-    expect(compiled.querySelector('span.app-title').textContent).toContain(
+    expect(compiled.querySelector('a.app-title').textContent).toContain(
       'Tours Admin'
     );
   });

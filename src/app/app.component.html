@@ -1,8 +1,8 @@
-<mat-toolbar color="primary">
+<mat-toolbar class="root-toolbar" color="primary">
   <button mat-icon-button (click)="sidebar.toggle()">
     <mat-icon>menu</mat-icon>
   </button>
-  <span class="app-title">Tours Admin</span>
+  <a routerLink="" class="app-title text-white text-decoration-none">Tours Admin</a>
 </mat-toolbar>
 
 <mat-drawer-container>
@@ -10,6 +10,8 @@
     <app-sidebar></app-sidebar>
   </mat-drawer>
   <mat-drawer-content>
-    <router-outlet></router-outlet>
+    <div class="root-container">
+      <router-outlet></router-outlet>
+    </div>
   </mat-drawer-content>
 </mat-drawer-container>
