@@ -10,6 +10,7 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
 import { SidebarModule } from './sidebar/sidebar.module';
+import { HttpClientModule } from '@angular/common/http';
 
 const appModules = [SidebarModule];
 const mat = [
@@ -25,6 +26,7 @@ const mat = [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
+    HttpClientModule,
     appModules,
     ...mat,
   ],

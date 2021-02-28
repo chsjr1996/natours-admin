@@ -1,0 +1,43 @@
+<div class="tours-list-container">
+  <h1>Tours list</h1>
+
+  <table mat-table [dataSource]="tours" class="mat-elevation-z8">
+    <ng-container matColumnDef="name">
+      <th mat-header-cell *matHeaderCellDef>Name</th>
+      <td mat-cell *matCellDef="let element">{{ element.name }}</td>
+    </ng-container>
+
+    <ng-container matColumnDef="price">
+      <th mat-header-cell *matHeaderCellDef>Price</th>
+      <td mat-cell *matCellDef="let element">{{ element.price }}</td>
+    </ng-container>
+
+    <ng-container matColumnDef="difficulty">
+      <th mat-header-cell *matHeaderCellDef>Difficulty</th>
+      <td mat-cell *matCellDef="let element">{{ element.difficulty }}</td>
+    </ng-container>
+
+    <ng-container matColumnDef="ratings_average">
+      <th mat-header-cell *matHeaderCellDef>Ratings avg.</th>
+      <td mat-cell *matCellDef="let element">{{ element.ratings_average }}</td>
+    </ng-container>
+
+    <ng-container matColumnDef="ratings_quantity">
+      <th mat-header-cell *matHeaderCellDef>Ratings qty.</th>
+      <td mat-cell *matCellDef="let element">{{ element.ratings_quantity }}</td>
+    </ng-container>
+
+    <ng-container matColumnDef="secret_tour">
+      <th mat-header-cell *matHeaderCellDef>Is secret</th>
+      <td mat-cell *matCellDef="let element">{{ element.secret_tour }}</td>
+    </ng-container>
+
+    <ng-container matColumnDef="is_active">
+      <th mat-header-cell *matHeaderCellDef>Is active</th>
+      <td mat-cell *matCellDef="let element">{{ element.is_active }}</td>
+    </ng-container>
+
+    <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+    <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+  </table>
+</div>
