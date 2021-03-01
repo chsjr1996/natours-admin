@@ -1,6 +1,8 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { ToursListComponent } from './tours-list.component';
+import { ToursService } from '../shared/tours.service';
+import { TestToursService } from 'src/testing/test-tours.service';
 
 describe('ToursListComponent', () => {
   let component: ToursListComponent;
@@ -8,9 +10,14 @@ describe('ToursListComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ ToursListComponent ]
-    })
-    .compileComponents();
+      providers: [
+        {
+          provide: ToursService,
+          useClass: TestToursService,
+        },
+      ],
+      declarations: [ToursListComponent],
+    }).compileComponents();
   });
 
   beforeEach(() => {
