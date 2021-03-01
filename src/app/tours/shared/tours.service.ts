@@ -22,14 +22,13 @@ export interface Tour {
 }
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
 export class ToursService {
-
   // TODO: Move this url to .env file (or similar)
   private tourUrl = 'http://localhost:3000/api/v1/tour';
 
-  constructor(private http: HttpClient) { }
+  constructor(private http: HttpClient) {}
 
   getTours(): Observable<Tour[]> {
     return this.http.get<Tour[]>(this.tourUrl);

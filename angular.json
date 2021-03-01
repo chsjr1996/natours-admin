@@ -90,9 +90,7 @@
             "assets": ["src/favicon.ico", "src/assets"],
             "styles": ["src/styles.scss"],
             "scripts": [],
-            "codeCoverageExclude": [
-              "src/testing/**/*"
-            ]
+            "codeCoverageExclude": ["src/testing/**/*"]
           }
         },
         "lint": {

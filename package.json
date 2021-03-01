@@ -13,7 +13,8 @@
     "test:coveralls": "coveralls < coverage/tours-admin/lcov.info",
     "test:ci": "npm run test:cov -- --browsers=ChromeHeadlessNoSandbox  && npm run test:coveralls",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "Prettify": "prettier --write ."
   },
   "private": true,
   "dependencies": {
